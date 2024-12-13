@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #000;
+  color: #eaeaea; 
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #d1a1d7;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #d1a1d7;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #9b59b6;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .team-cards, .feature-boxes {
+    flex-wrap: wrap;
+  }
+
+  .team-card, .feature-box {
+    width: 90%;
+  }
+
+  .pricing .plan {
+    margin: 10px auto;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

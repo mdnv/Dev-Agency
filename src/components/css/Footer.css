@@ -1,0 +1,31 @@
+.footer {
+  background: linear-gradient(180deg, #1e1e30, #3c1053);
+  color: #eaeaea;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p{
+  display: flex;
+  justify-content: left;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: right;
+  margin: -45px 70px 0 0;
+}
+
+.social_icons a {
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.social_icons a:hover {
+  transform: scale(1.2);
+}
+
+.link_icons{
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,40 @@
+.team {
+  background: linear-gradient(180deg, #1e1e30, #2c2c54);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_member {
+  background: linear-gradient(to right, #692881, #301d69);
+  color: #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  cursor: pointer;
+  transition: transform 0.7s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team_member img {
+  width: 120px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team_member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team_text{
+  margin: -20px auto 20px auto;
+}

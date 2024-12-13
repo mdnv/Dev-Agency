@@ -1,0 +1,149 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #3c1053, #2c2c54);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo_img{
+  width: 80px;
+  height: 80px;
+  margin: 0 0 0 100px;
+}
+
+.burger_menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu ul {
+  margin: 0 0 0 750px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #9b59b6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #d1a1d7;
+}
+
+@media (max-width: 768px) {
+  .burger_menu {
+    display: block; 
+    margin: 0 0 -10px 90px;
+  }
+
+  .menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #3c1053;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu.menu_open {
+    display: flex; 
+  }
+
+  .menu a {
+    color: #8e44ad;;
+  }
+
+  .menu a:hover {
+    color: #d1a1d7;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .burger_menu {
+    display: block; 
+    margin: 0 0 -10px 600px;
+  }
+
+  .menu {
+    display: none; 
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    left: 80px;
+    background: #3c1053;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu.menu_open {
+    display: flex; 
+  }
+
+  .menu a {
+    color: #8e44ad;;
+  }
+
+  .menu a:hover {
+    color: #d1a1d7;
+  }
+}
+
+@media (min-width: 993px) {
+  .burger_menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    gap: 20px;
+    background: none;
+    box-shadow: none;
+    justify-content: flex-end;
+  }
+
+  .menu a {
+    color: white;
+  }
+
+  .menu a:hover {
+    color: #9b59b6;
+  }
+}
