@@ -97,3 +97,13 @@ textarea{
 .btn_gradient:hover {
   box-shadow: 0 5px 15px rgba(155, 89, 182, 0.5);
 }
+
+@media (max-width: 768px) {
+  .contact_form {
+    margin: 0 auto;
+  }
+  .globus_1{
+    margin: 20px 0 -390px 0;
+  }
+}
+

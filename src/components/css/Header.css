@@ -60,7 +60,13 @@
 @media (max-width: 768px) {
   .burger_menu {
     display: block; 
-    margin: 0 0 -10px 90px;
+    margin: 0 0 -10px 260px;
+  }
+
+  .logo_img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
   }
 
   .menu {
